@@ -1,0 +1,10 @@
+@styleTitle 'Offered Areas';
+@styleAbstract '';
+
+/* @title Area Offered in Round*/
+* {
+    fill:lightpink;
+    fill-opacity:0.5;
+    stroke: #333;
+    stroke-width: 0.1;
+}
