@@ -1,0 +1,71 @@
+@mod 'Flat';
+@styleTitle 'Windfarm Status';
+@styleAbstract '';
+
+/*@title Windfarm Fully Comissioned*/
+[windfarm_status = 'Fully Commissioned'] {
+    fill: symbol("shape://slash");
+    /* fill: symbol("shape://vertline"); */
+    /* fill: symbol("shape://horline"); */
+    /* fill: symbol("shape://slash"); */
+    /* fill: symbol("shape://backslash"); */
+    /* fill: symbol("shape://plus"); */
+    /* fill: symbol("shape://times"); */
+    :fill {
+        size: 5;
+        stroke: #11ff00;
+        stroke-width: 1;
+        stroke-linecap: round;
+    };
+  stroke:black;
+  stroke-width:0.2;
+}
+/*@title Windfarm Under Construction*/
+[windfarm_status = 'Under Construction'] {
+    fill: symbol("shape://slash");
+    /* fill: symbol("shape://vertline"); */
+    /* fill: symbol("shape://horline"); */
+    /* fill: symbol("shape://slash"); */
+    /* fill: symbol("shape://backslash"); */
+    /* fill: symbol("shape://plus"); */
+    /* fill: symbol("shape://times"); */
+    :fill {
+        size: 5;
+        stroke: #8b572a;
+        stroke-width: 1;
+        stroke-linecap: round;
+    };
+  stroke:black;
+  stroke-width:0.2;
+  
+}
+/*@title Windfarm In Planning*/
+[windfarm_status IN ( 'Concept/Early Planning', 'Consent Application Submited', 'Concent Authorised')] {
+    fill: symbol("shape://slash");
+    /* fill: symbol("shape://vertline"); */
+    /* fill: symbol("shape://horline"); */
+    /* fill: symbol("shape://slash"); */
+    /* fill: symbol("shape://backslash"); */
+    /* fill: symbol("shape://plus"); */
+    /* fill: symbol("shape://times"); */
+    :fill {
+        size: 5;
+        stroke: #4a4a4a;
+        stroke-width: 1;
+        stroke-linecap: round;
+    };
+  stroke:black;
+  stroke-width:0.2;
+}
+/*@title Windfarm Status Unknown*/
+[windfarm_status = 'UNKNOWN'] {
+  fill:grey;
+    :fill {
+        size: 2;
+        stroke: #000000;
+        stroke-width: 1;
+        stroke-linecap: round;
+    };
+  stroke:black;
+  stroke-width:0.2;
+}
