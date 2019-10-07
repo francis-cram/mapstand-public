@@ -24,7 +24,7 @@
 [lc_status = 'Current'] [@sd >= 10M]{
 
   fill:yellow;
-  stroke:black;
+  stroke:yellow;
   stroke-width:0.1;
   fill-opacity:1;
 }
@@ -47,7 +47,7 @@
   stroke-width:0.05;
   stroke:black;
   stroke-opacity:0.5;
-  fill:lightseagreen;
+  fill:lightgreen;
   fill-opacity:1;
 
 }
@@ -56,6 +56,15 @@
 	stroke: #000000;
   stroke-width:0.05;
   stroke:red;
+  stroke-opacity:0.5;
+  fill:yellow;
+
+}
+/* @title Suspended */
+[lc_status = 'Suspended'] {
+	stroke: #000000;
+  stroke-width:0.05;
+  stroke:orange;
   stroke-opacity:0.5;
   fill:yellow;
 
