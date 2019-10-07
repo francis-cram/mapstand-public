@@ -1,0 +1,14 @@
+@styleTitle 'Well Location';
+@styleAbstract '';
+
+/*@title Well Location */
+[@sd < 3M] {
+	mark: symbol(circle);
+  stroke: #333333;
+  stroke-width: 1;
+  :mark {
+    size: 6;
+    stroke: #333;
+    stroke-width: 1;
+  }
+}
