@@ -1,0 +1,30 @@
+@styleTitle 'Licensing Round';
+@styleAbstract '';
+/*@title Open Round */
+ [status IN ('Open', 'Open Door','Open Door Policy','Bid Round Open','Bid Round Extended', 'Current' )] {
+	stroke: #000000;
+  stroke-width:0.05;
+  fill:lightgreen;
+   fill-opacity:0.3;
+}
+/*@title Awards Pending */
+ [status IN ('Awards Awaiting Ratification', 'Awards Pending','Bid Round Closing Shortly', 'Pending Award' )] {
+	stroke: #000000;
+  stroke-width:0.05;
+  fill:orange;
+   fill-opacity:0.3;
+}
+/*@title Planned */
+ [status IN ('Planned', 'Planned Bid Round')] {
+	stroke: #4a90e2;
+  stroke-width:0.05;
+  fill:orange;
+   fill-opacity:0.3;
+}
+/*@title Round Suspended */
+ [status IN ('Round Suspended')] {
+	stroke: #4a90e2;
+  stroke-width:0.05;
+  fill:red;
+   fill-opacity:0.3;
+}
