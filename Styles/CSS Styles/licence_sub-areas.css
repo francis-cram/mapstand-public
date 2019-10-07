@@ -1,0 +1,9 @@
+@styleTitle 'Sub Area';
+@styleAbstract '';
+
+/*@title Licence Sub-Area*/
+* {
+	fill: #FFFF33;
+  stroke: #000000;
+  stroke-width:0.2;
+}
