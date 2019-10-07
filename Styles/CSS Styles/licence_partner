@@ -1,0 +1,9 @@
+@styleTitle 'licence partner';
+@styleAbstract '';
+/* @title Licence by Partner */
+* {
+    fill:yellowgreen;
+	  stroke: #000000;
+    fill-opacity: 0.5;
+    stroke-width: 0.1;
+}
