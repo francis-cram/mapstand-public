@@ -1,0 +1,10 @@
+@styleTitle 'block outline';
+@styleAbstract '';
+
+/* @title \Licenced and Open Blocks */
+[@sd < 10M] {
+    fill:yellow;
+    fill-opacity:0;
+    stroke: #9b9b9b;
+    stroke-width: 0.001;
+}
