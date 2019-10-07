@@ -1,0 +1,21 @@
+@styleTitle 'Planned Pipelines';
+@styleAbstract '';
+
+/* @title Planned Gas Pipeline*/
+[ fluid LIKE 'Gas'] {
+	stroke: #ff0000;
+	stroke-width: 1;
+	stroke-dasharray: 6 2;
+}
+/* @title Planned Oil Pipeline*/
+[fluid LIKE 'Oil'] {
+	stroke: #0d9415;
+	stroke-width: 1;
+	stroke-dasharray: 6 2;
+}
+/* @title Planned Pipeline*/
+* {
+	stroke: #4a4a4a;
+	stroke-width: 1;
+	stroke-dasharray: 6 2;
+}
