@@ -1,0 +1,7 @@
+@styleTitle 'Basic Pipeline';
+@styleAbstract '';
+/*@title Pipelines*/
+ * {
+	stroke: #4a4a4a;
+  stroke-opacity:0.5;
+}
