@@ -1,0 +1,9 @@
+@styleTitle '3D Seismic basic';
+@styleAbstract '';
+
+/* @title 3D Surveys */
+* {
+	stroke: #999999;
+  fill:lightblue;
+  fill-opacity:0.5;
+}
