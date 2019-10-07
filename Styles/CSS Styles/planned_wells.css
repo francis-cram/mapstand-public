@@ -1,0 +1,17 @@
+@styleTitle 'Planned Wells';
+@styleAbstract '';
+
+/* @title Planned Wells */
+* {
+  mark: symbol('circle'), symbol('x');
+  :nth-mark(1) {
+    size: 16px;
+    fill: white;
+    stroke: black;
+  };
+  :nth-mark(2) {
+    size: 12px;
+    fill: green;
+  }
+
+}
