@@ -1,0 +1,33 @@
+@mod 'Flat';
+@styleTitle 'Basin Types';
+@styleAbstract '';
+
+/*@title Space Filling Basin*/
+[basin_type = 'Space Fillers'] {
+	stroke: #000000;
+  stroke-width:0.2;
+  fill:darkorange;
+  fill-opacity:0.2;
+
+}
+/*@title Extensional Basin*/
+[basin_type = 'Extensional'] {
+	stroke: #000000;
+  stroke-width:0.2;
+  fill:darkgreen;
+  fill-opacity:0.2;
+}
+/*@title Platform Basin*/
+[basin_type = 'Platform'] {
+	stroke: #000000;
+  stroke-width:0.2;
+  fill:darkblue;
+  fill-opacity:0.2;
+}
+/*@title Convergent Basin*/
+[basin_type = 'Convergent'] {
+	stroke: #000000;
+  stroke-width:0.2;
+  fill:purple;
+  fill-opacity:0.2;
+}
