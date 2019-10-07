@@ -1,0 +1,45 @@
+@mod 'Flat';
+@styleTitle 'Prospects and Leads';
+@styleAbstract '';
+
+
+/*@title Lead*/
+ [accumulation_type = 'Lead'][@sd < 1M] {
+  fill:#f8e71c;
+  stroke:black;
+  stroke-width:0.1;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 3;
+}
+/*@title Lead*/
+ [accumulation_type = 'Lead'][@sd > 1M] {
+  fill:#f8e71c;
+  stroke:black;
+  stroke-width:0.1;
+}
+/*@title Prospect*/
+ [accumulation_type = 'Prospect'][@sd < 1M]{
+  fill:#ffad00;
+  stroke:black;
+  stroke-width:0.1;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 3;
+}
+/*@title Prospect*/
+ [accumulation_type = 'Prospect'][@sd > 1M]{
+  fill:#ffad00;
+  stroke:black;
+  stroke-width:0.1;
+}
+
+/*@title Failed Objective*/
+ [accumulation_type = 'Failed Objective']{
+  fill:#000000;
+  fill-opacity:0;
+  stroke:black;
+  stroke-width:0.1;
+}
