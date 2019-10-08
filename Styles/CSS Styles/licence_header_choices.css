@@ -1,0 +1,79 @@
+@styleTitle 'Licence Header';
+@styleAbstract '';
+
+/* @title Current Licence */
+[lc_status = 'CURRENT'] [@sd <= 10M][@sd > 2.5M]{
+	stroke: #000000;
+  stroke-width:0.1;
+  stroke:black;
+  stroke-opacity:0.7;
+  fill:yellow;
+  fill-opacity:1;
+}
+/* @title Current Licence */
+[lc_status = 'CURRENT'] [@sd <= 2.5M]{
+	stroke: #000000;
+  stroke-width:0.1;
+  stroke:black;
+  stroke-opacity:0.7;
+  fill:yellow;
+  fill-opacity:1;
+
+}
+/* @title Current Licence */
+[lc_status = 'CURRENT'] [@sd >= 10M]{
+
+  fill:yellow;
+  stroke:yellow;
+  stroke-width:0.1;
+  fill-opacity:1;
+}
+/* @title Pending Award */
+[lc_status = 'PENDING_AWARD'] {
+	stroke: #000000;
+  stroke-width:0.05;
+  stroke:green;
+  stroke-opacity:0.5;
+  fill: symbol("shape://times");
+  :fill {
+     size: 6;
+     stroke:yellow;
+     stroke-width: 1px;
+  }
+}
+/* @title Licence Application */
+[lc_status = 'APPLICATION'] {
+	stroke: #000000;
+  stroke-width:0.05;
+  stroke:black;
+  stroke-opacity:0.5;
+  fill:lightseagreen;
+  fill-opacity:1;
+
+}
+/* @title Force Majeure */
+[lc_status = 'FORCE_MAJOURE'] {
+	stroke: #000000;
+  stroke-width:0.05;
+  stroke:red;
+  stroke-opacity:0.5;
+  fill:yellow;
+
+}
+/* @title Suspended */
+[lc_status = 'SUSPENDED'] {
+	stroke: #000000;
+  stroke-width:0.05;
+  stroke:orange;
+  stroke-opacity:0.5;
+  fill:yellow;
+
+}
+/* @title Unknown Status */
+[lc_status = 'UNKNOWN']{
+	stroke: #000000;
+  stroke-width:0.1;
+  stroke:black;
+  stroke-opacity:0.7;
+  fill:silver;
+  fill-opacity:1;
