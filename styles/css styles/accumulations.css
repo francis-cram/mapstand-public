@@ -1,0 +1,264 @@
+@styleTitle 'Fields HC Type';
+@styleAbstract '';
+
+
+/*@title Oil */
+[@sd < 20M][@sd > 2M][hydrocarbon_type='OIL'][accumulation_type='CEASED_PRODUCTION'] {
+	stroke: #5da706;
+  stroke-width:1;
+  fill: symbol("shape://times");
+   :fill {
+     size: 16;
+     stroke: #00ff09;
+     stroke-width: 1px;
+   };
+}
+/*@title Oil */
+[@sd < 20M][@sd > 2M][hydrocarbon_type='OIL'] {
+	stroke: #5da706;
+  stroke-width:1;
+   fill:#55ff00;
+}
+/*@title Oil */
+[@sd < 2M][hydrocarbon_type='OIL']{
+	stroke: #5da706;
+  stroke-width:1;
+  fill:#55ff00;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 1;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Oil */
+[@sd < 2M][hydrocarbon_type='OIL'][accumulation_type='CEASED_PRODUCTION']{
+	stroke: #5da706;
+  stroke-width:1;
+  fill: symbol("shape://times");
+   :fill {
+     size: 16;
+     stroke: #00ff09;
+     stroke-width: 1px;
+   };
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 1;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Oil */
+[@sd < 2M][hydrocarbon_type='OIL'][accumulation_type='DISCOVERY']{
+	stroke: #5da706;
+  stroke-width:1;
+  fill:#a9e986;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 1;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Condensate */
+[@sd < 10M][@sd > 2M][hydrocarbon_type='CONDENSATE'] {
+	stroke: #9013fe;
+  stroke-width:1;
+  fill:#d159ee;
+}
+/*@title Condensate */
+[@sd < 2M][hydrocarbon_type='CONDENSATE'][accumulation_type='PRODUCING'] {
+	stroke: #9013fe;
+  stroke-width:1;
+  fill:#d159ee;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Condensate */
+[@sd < 2M][hydrocarbon_type='CONDENSATE'][accumulation_type='CEASED_PRODUCTION'] {
+	stroke: #9013fe;
+  stroke-width:1;
+  fill: symbol("shape://times");
+   :fill {
+     size: 16;
+     stroke: #bd10e0;
+     stroke-width: 1px;
+   };
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Condensate */
+[@sd < 2M][hydrocarbon_type='CONDENSATE'][accumulation_type='DISCOVERY'] {
+	stroke: #9013fe;
+  stroke-width:1;
+  fill:#d6a3e3;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Oil and Condensate */
+[@sd < 10M][@sd > 1M][hydrocarbon_type='OIL_AND_CONDENSATE'] {
+	stroke:#d159ee;
+  stroke-width:1;
+  fill:#55ff00;
+}
+/*@title Oil and Condensate */
+[@sd < 1M][hydrocarbon_type='OIL_AND_CONDENSATE'] {
+	stroke:#d159ee;
+  stroke-width:1;
+  fill:#55ff00;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Gas */
+[@sd < 10M][@sd > 2M][hydrocarbon_type='GAS'] {
+	stroke: #d0021b;
+  stroke-width:1;
+  fill:#ff0000;
+}
+/*@title Gas */
+[@sd < 2M][hydrocarbon_type='GAS'][accumulation_type='CEASED_PRODUCTION']{
+	stroke: #d0021b;
+  stroke-width:1;
+   fill: symbol("shape://times");
+   :fill {
+     size: 16;
+     stroke: #d0021b;
+     stroke-width: 1px;
+   };
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+[@sd < 2M][hydrocarbon_type='GAS'][accumulation_type='DISCOVERY']{
+	stroke: #d0021b;
+  stroke-width:1;
+  fill:#fc7474;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+[@sd < 2M][hydrocarbon_type='GAS'][accumulation_type='PRODUCING']{
+	stroke: #d0021b;
+  stroke-width:1;
+  fill:#ff0000;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Gas and Condensate */
+[@sd < 10M][@sd > 1M][hydrocarbon_type='GAS_AND_CONDENSATE'] {
+	stroke: #d159ee;
+  stroke-width:1;
+  fill:#ff0000;
+}
+/*@title Gas and Condensate */
+[@sd < 1M][hydrocarbon_type='GAS_AND_CONDENSATE'] {
+	stroke: #d159ee;
+  stroke-width:1;
+  fill:#ff0000;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Gas and Oil */
+[@sd < 10M][@sd > 1M][hydrocarbon_type='GAS_AND_OIL'] {
+	stroke: #55ff00;
+  stroke-width:1;
+  fill:#ff0000;	
+}
+/*@title Gas and Oil */
+[@sd < 1M][hydrocarbon_type='GAS_AND_OIL'] {
+	stroke: #55ff00;
+  stroke-width:1;
+  fill:#ff0000;	
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Gas Condensate and Oil */
+[@sd < 10M][@sd > 1M][hydrocarbon_type='GAS_CONDENSATE_AND_OIL'] {
+	stroke: #d159ee;
+  stroke-width:1;
+  fill:#ff0000;
+}
+/*@title Gas Condensate and Oil */
+[@sd < 1M][hydrocarbon_type='GAS_CONDENSATE_AND_OIL'] {
+	stroke: #d159ee;
+  stroke-width:1;
+  fill:#ff0000;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Oil and Gas */
+[@sd < 10M][@sd > 1M][hydrocarbon_type='OIL_AND_GAS'] {
+	stroke: #ff0000;
+  stroke-width:1;
+  fill:#55ff00;
+}
+/*@title Oil and Gas */
+[@sd < 1M][hydrocarbon_type='OIL_AND_GAS'] {
+	stroke: #ff0000;
+  stroke-width:1;
+  fill:#55ff00;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+}
+/*@title Oil Gas and Condensate */
+[@sd < 10M][@sd > 1M][hydrocarbon_type='OIL_GAS_AND_CONDENSATE'] {
+	stroke: #ff0000;
+  stroke-width:1;
+  fill:#55ff00;
+	
+}
+/*@title Oil Gas and Condensate */
+[@sd < 1M][hydrocarbon_type='OIL_GAS_AND_CONDENSATE'] {
+	stroke: #ff0000;
+  stroke-width:1;
+  fill:#55ff00;
+  label: [accumulation_name];
+  font-fill: black;
+  halo-color: white;
+  halo-radius: 2;
+  font-family: Arial;
+  font-size: 14;
+	
+}
